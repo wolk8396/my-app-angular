@@ -1,5 +1,5 @@
-<h3 (click)="getSomeTing = !getSomeTing">4.ngClass - деректива</h3>
-<div  *ngIf="getSomeTing">
+<h3 class="title-ngClass" (click)="getSomeTing = !getSomeTing">4.ngClass - деректива...</h3>
+<div class="block-ngClass"  *ngIf="getSomeTing">
   <ul class="list-color"
     [ngClass]="{list_Color_Black: borderColor}"
     >
@@ -20,5 +20,5 @@
       [class.red]="!ColorYellow"
     >Third Color</li>
   </ul>
-  <button class="btn-color" (click)="borderColor = !borderColor">Change Color</button>
+  <button class="btn-color" (click)="changeStr()">{{strBtn}}</button>
 </div>

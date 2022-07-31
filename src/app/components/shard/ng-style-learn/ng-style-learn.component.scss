@@ -1,0 +1,14 @@
+.title-ngStyle {
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.block-ngStyle {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.title-ngStyle:hover {
+  text-decoration: underline;
+}

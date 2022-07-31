@@ -10,6 +10,7 @@ export class NgClassleLearnComponent implements OnInit {
   ChangeColorBlue: boolean = false;
   borderColor: boolean = false;
   ColorYellow: boolean = false;
+  strBtn: string = 'Hide Frame';
 
   constructor() { }
 
@@ -19,4 +20,9 @@ export class NgClassleLearnComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  changeStr() {
+    this.borderColor = !this.borderColor;
+
+    (!this.borderColor) ? this.strBtn = 'Hide Frame' : this.strBtn = 'Show Frame';
+  }
 }

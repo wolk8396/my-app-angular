@@ -13,10 +13,9 @@ export class EventbindingsLearnComponent implements OnInit {
   @Input() getSomeTing: boolean;
 
   @Output() newItemEvent = new EventEmitter<boolean>();
-  // EventEmitter
+
   ngOnInit(): void {
     this.newItemEvent.emit(this.eventBinding);
-
   }
 
   onInput2 (event: Event) {
@@ -25,12 +24,5 @@ export class EventbindingsLearnComponent implements OnInit {
 
   onBlur(str: string) {
     this.inputValue = str;
-  }
-
-
-  onClick() {
-    this.getSomeTing =!this.getSomeTing
-    console.log(this.getSomeTing);
-
   }
 }

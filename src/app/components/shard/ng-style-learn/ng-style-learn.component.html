@@ -1,5 +1,16 @@
-<h3 (click)="getSomeTing = !getSomeTing">3.ngStyle - деректива</h3>
-<div *ngIf="getSomeTing">
+<h3 class="title-ngStyle" (click)="getSomeTing = !getSomeTing">3.ngStyle - деректива....</h3>
+<div class="block-ngStyle" *ngIf="getSomeTing">
+  <div [ngStyle]="{
+    width: '200px',
+    height: '100px',
+    borderRadius: '5px',
+    border: '1px solid black',
+    margin: '0 auto',
+    marginTop: '15px',
+    backgroundColor: backgroundToggle ? 'red ': null
+    }"
+    >
+  </div>
   <button
     (click)="backgroundToggle = !backgroundToggle"
     [ngStyle]="{
@@ -7,18 +18,8 @@
     height: '30px',
     borderRadius: '5px',
     margin: '0 auto',
+    marginTop: '15px',
     backgroundColor: 'red'
     }"
   >toggle</button>
-  <div [ngStyle]="{
-    width: '200px',
-    height: '100px',
-    borderRadius: '5px',
-    border: '1px solid black',
-    margin: '0 auto',
-    backgroundColor: backgroundToggle ? 'red ': null
-    }"
-    >
-  </div>
 </div>
-

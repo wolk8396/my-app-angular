@@ -1,0 +1,44 @@
+.block-bindings {
+  display: flex ;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 300px;
+	height: 100%;
+
+	.title-bindings {
+    margin: 0 auto;
+		cursor: pointer;
+  }
+
+	.container-frame {
+		display: flex ;
+		flex-direction: column;
+		justify-content: space-between;
+		margin-top: 15px;
+
+		.photo {
+			width: 60px;
+			height: 60px;
+			margin: 0 auto;
+		}
+	
+		.title {
+			margin-top: 5px;
+			font-weight: bold;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+	
+		.input {
+			width: 150px;
+			height: 20px;
+			margin: 0 auto;
+			margin-top: 10px;
+		}
+		
+	}
+
+	.title-bindings:hover {
+		text-decoration: underline;
+	}
+}

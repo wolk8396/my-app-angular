@@ -9,46 +9,31 @@
     margin: 0 auto;
   }
 
-  .photo {
-    width: 150px;
-    height: 150px;
+  .bindings {
     margin: 0 auto;
+    margin-top: 15px;
   }
 
-  .title {
-    margin-top: 5px;
-    font-weight: bold;
-    margin: 0 auto;
-  }
-
-  .title2 {
-    margin: 0 auto;
-  }
-
-  .input {
-    width: 150px;
-    height: 20px;
-    margin: 0 auto;
-  }
-
-  .container {
+  .eventbindings {
     display: flex;
-    flex-direction: row;
-    width: 250px;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0 auto;
-
-    .input2 {
-      width: 150px;
-      height: 20px;
-    }
-
-    .btn-click {
-      width: 100px;
-      height: 25px;
-    }
-
+    width: 350px;
   }
 
+  .ngStyle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .ngClass {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 
   .line {
     align-items: center;
