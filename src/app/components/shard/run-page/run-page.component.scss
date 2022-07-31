@@ -1,0 +1,11 @@
+.navigtion-btns {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 230px;
+
+  .button {
+    width: 100px;
+    height: 40px;
+  }
+}

@@ -1,0 +1,24 @@
+<h3 (click)="getSomeTing = !getSomeTing">4.ngClass - деректива</h3>
+<div  *ngIf="getSomeTing">
+  <ul class="list-color"
+    [ngClass]="{list_Color_Black: borderColor}"
+    >
+    <li class="red" (click)="ChangeColorRed = !ChangeColorRed"
+    [ngClass]="{
+      red: ChangeColorRed,
+      green: !ChangeColorRed
+    }">First color</li>
+    <li class="blue"
+    (click)="ChangeColorBlue = !ChangeColorBlue"
+    [ngClass]="{
+      blue: ChangeColorBlue,
+      green: !ChangeColorBlue
+    }">Second Color</li>
+    <li
+      (click)="ColorYellow = !ColorYellow"
+      [class.yellow]="ColorYellow"
+      [class.red]="!ColorYellow"
+    >Third Color</li>
+  </ul>
+  <button class="btn-color" (click)="borderColor = !borderColor">Change Color</button>
+</div>

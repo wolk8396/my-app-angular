@@ -1,0 +1,32 @@
+.list-color {
+  margin: 0 auto;
+  width: 120px;
+  height: 70px;
+  border: 1px solid green;
+
+  .red {
+    color: red;
+  }
+
+  .blue {
+    color: blue;
+  }
+
+  .green {
+    color: green;
+  }
+  .yellow {
+    color: yellowgreen;
+  }
+}
+
+.list_Color_Black {
+  display: none;
+}
+
+.btn-color {
+  background-color: green;
+  width: 100px;
+  height: 25px;
+  margin: 0 auto;
+}

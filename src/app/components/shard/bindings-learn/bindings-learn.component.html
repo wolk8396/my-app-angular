@@ -1,0 +1,7 @@
+<h3 (click)="getSomeTing = !getSomeTing">1.bindings</h3>
+<div *ngIf="getSomeTing">
+  <img class='photo' [src]="img" alt="">
+  <H2 class="title">{{title}}</H2>
+  <input class="input" type="text" [(ngModel)]="title">
+</div>
+ <!-- <input type="text" [value]="title" (input) = 'onInput($event)'> -->

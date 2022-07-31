@@ -1,0 +1,11 @@
+<h3 (click)="getSomeTing = !getSomeTing">4.ngif else - деректива</h3>
+<div class="block" *ngIf="getSomeTing">
+  <p *ngIf="paragraph; else blueP" class="color-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, corporis.</p>
+
+  <ng-template #blueP>
+    <p  #blueP class="color-blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, corporis.</p>
+  </ng-template>
+
+  <button class="btn-p" (click)="paragraph = !paragraph" >Show paragraph</button>
+</div>
+

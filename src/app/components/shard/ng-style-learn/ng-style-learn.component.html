@@ -1,0 +1,24 @@
+<h3 (click)="getSomeTing = !getSomeTing">3.ngStyle - деректива</h3>
+<div *ngIf="getSomeTing">
+  <button
+    (click)="backgroundToggle = !backgroundToggle"
+    [ngStyle]="{
+    width: '100px',
+    height: '30px',
+    borderRadius: '5px',
+    margin: '0 auto',
+    backgroundColor: 'red'
+    }"
+  >toggle</button>
+  <div [ngStyle]="{
+    width: '200px',
+    height: '100px',
+    borderRadius: '5px',
+    border: '1px solid black',
+    margin: '0 auto',
+    backgroundColor: backgroundToggle ? 'red ': null
+    }"
+    >
+  </div>
+</div>
+

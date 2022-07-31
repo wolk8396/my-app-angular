@@ -1,0 +1,23 @@
+.switch {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+
+  .color-red {
+    margin: 0 auto;
+    color: red;
+  }
+
+  .color-blue {
+    margin: 0 auto;
+    color: blue;
+  }
+}
+
+.btn-switch {
+  background-color: green;
+  width: 120px;
+  height: 25px;
+  margin:  0 auto;
+  margin-top: 20px;
+}

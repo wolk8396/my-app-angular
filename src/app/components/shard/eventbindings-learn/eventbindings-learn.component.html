@@ -1,0 +1,10 @@
+<h3 (click)="getSomeTing = !getSomeTing">2.Event Bindings</h3>
+<div class="container" *ngIf="getSomeTing">
+  <input class="input2" type="text"
+  (keyup.enter)="onInput2($event)"
+  (blur)="onBlur(MyInput.value)"
+  #MyInput
+  >
+  <button (click)="onClick()" class="btn-click">Click me</button>
+</div>
+<p class="title2"><strong>{{inputValue}}</strong></p>

@@ -1,0 +1,28 @@
+<div class="block" [ngSwitch]="menu">
+  <h1>Основной синтаксис</h1>
+  <app-bindings-learn [getSomeTing]="menu"></app-bindings-learn>
+  <br>
+    <hr class="line">
+  <br>
+    <app-eventbindings-learn [getSomeTing]="menu" (newItemEvent)="getLearnEvenBindings($event)"></app-eventbindings-learn>
+  <br>
+    <hr class="line">
+  <br>
+    <app-ng-style-learn [getSomeTing]="menu"></app-ng-style-learn>
+  <br>
+    <hr class="line">
+  <br>
+    <app-ng-classle-learn [getSomeTing]="menu"></app-ng-classle-learn>
+  <br>
+    <hr class="line">
+  <br>
+  <app-ng-ifle-learn [getSomeTing]="menu"></app-ng-ifle-learn>
+  <br>
+   <hr class="line">
+  <br>
+    <app-ng-switchle-learn [getSomeTing]="menu"></app-ng-switchle-learn>
+  <br>
+    <hr class="line">
+  <br>
+  <app-run-page class="block-btn"></app-run-page>
+</div>

@@ -1,0 +1,11 @@
+<h3 (click)="getSomeTing = !getSomeTing">5.ngSwitch - деректива</h3>
+<div *ngIf="getSomeTing" >
+  <div class="switch" [ngSwitch]="switch">
+    <p  class="color-red" *ngSwitchCase="true">paragraph first</p>
+    <p  class="color-blue" *ngSwitchCase="false">paragraph second</p>
+    <p *ngSwitchDefault>Nothing</p>
+  </div>
+  <button class="btn-switch" (click)="switch = !switch"></button>
+  <button class="btn-switch" (click)="switch = 111">set 1111</button>
+</div>
+
