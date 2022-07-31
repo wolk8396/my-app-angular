@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NgSwitchleLearnComponent implements OnInit {
   switch: boolean | number = false || 0;
+  strBtn: string = 'Change paragraph';
 
   constructor() { }
 

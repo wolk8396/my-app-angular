@@ -1,0 +1,32 @@
+.title-ngIf {
+  margin: 0 auto;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 500px;
+  height: 100%;
+  margin-top: 15px;
+
+  .color-red {
+    margin: 0 auto;
+    color: red;
+  }
+
+  .color-blue {
+    margin: 0 auto;
+    color: blue;
+  }
+
+  .btn-p {
+    width: 120px;
+    height: 25px;
+    margin:  0 auto;
+    margin-top: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+  }
+}
+

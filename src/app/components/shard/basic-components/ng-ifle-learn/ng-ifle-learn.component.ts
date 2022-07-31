@@ -5,14 +5,19 @@ import { Component, Input, OnInit } from '@angular/core';
   templateUrl: './ng-ifle-learn.component.html',
   styleUrls: ['./ng-ifle-learn.component.scss']
 })
+
 export class NgIfleLearnComponent implements OnInit {
   paragraph: boolean = false;
+  strBtn: string = 'Set blue';
 
   @Input() getSomeTing: boolean;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  setText() {
+    this.paragraph = !this.paragraph;
+    (!this.paragraph) ? this.strBtn = "Set blue" : this.strBtn = "Set red";
   }
-
 }

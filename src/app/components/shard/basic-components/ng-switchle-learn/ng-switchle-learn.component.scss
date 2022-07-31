@@ -1,0 +1,41 @@
+.title-ngSwitch {
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.block-ngSwitch {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .switch {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  
+    .color-red {
+      margin: 0 auto;
+      color: red;
+    }
+  
+    .color-blue {
+      margin: 0 auto;
+      color: blue;
+    }
+
+    .defeault {
+      margin: 0 auto;
+    }
+  }
+  
+  .btn-switch {
+    background-color: green;
+    width: 120px;
+    height: 36px;
+    margin:  0 auto;
+    margin-top: 20px;
+    color: whitesmoke;
+    border: none;
+  }
+}
