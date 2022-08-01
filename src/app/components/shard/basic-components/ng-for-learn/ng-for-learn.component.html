@@ -1,0 +1,14 @@
+<H3 class="title-ngFor" (click)="getSomeTing = !getSomeTing">ngFor-Директива</H3>
+<div class="block-ngFor" *ngIf="getSomeTing">
+  <ul >
+    <li *ngFor="let item of arr; let i = index">
+      {{i+1}}:<strong>{{item}}</strong></li>
+  </ul>
+  <ul *ngFor="let item of objs; let i = index">
+    <li>{{item.title}}</li>
+    <li>{{item. author}}</li>
+    <li *ngFor="let comments of item.comments">
+      <p>{{comments.name}}: {{comments.text}}</p>
+    </li>
+  </ul>
+</div>

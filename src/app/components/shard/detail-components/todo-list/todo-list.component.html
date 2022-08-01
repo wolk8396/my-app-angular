@@ -1,0 +1,6 @@
+<div class="cart" #getElements>
+    <H2>{{getTodo.title}}</H2>
+    <p>{{getTodo.text}}</p>
+    <button class="btn-delete" (click)="removeTodo()">X</button>
+    <ng-content></ng-content>
+</div>

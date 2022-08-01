@@ -49,6 +49,13 @@
     justify-content: space-between;
   }
 
+  .ngFor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
   .line {
     align-items: center;
     width: 1286px;

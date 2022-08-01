@@ -15,6 +15,9 @@ import { NgStyleLearnComponent } from './components/shard/basic-components/ng-st
 import { NgClassleLearnComponent } from './components/shard/basic-components/ng-classle-learn/ng-classle-learn.component';
 import { NgIfleLearnComponent } from './components/shard/basic-components/ng-ifle-learn/ng-ifle-learn.component';
 import { NgSwitchleLearnComponent } from './components/shard/basic-components/ng-switchle-learn/ng-switchle-learn.component';
+import { NgForLearnComponent } from './components/shard/basic-components/ng-for-learn/ng-for-learn.component';
+import { FormComponent } from './components/shard/detail-components/form/form.component';
+import { TodoListComponent } from './components/shard/detail-components/todo-list/todo-list.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import { NgSwitchleLearnComponent } from './components/shard/basic-components/ng
     NgStyleLearnComponent,
     NgClassleLearnComponent,
     NgIfleLearnComponent,
-    NgSwitchleLearnComponent
+    NgSwitchleLearnComponent,
+    NgForLearnComponent,
+    FormComponent,
+    TodoListComponent
   ],
   imports: [
     BrowserModule,

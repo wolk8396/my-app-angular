@@ -1,2 +1,17 @@
-<p>componentsin-detail works!</p>
-<app-run-page></app-run-page>
+<div class="wrapper-form">
+  <app-form class="block-form" [getDate]="post" (setDate)="getDate($event)"></app-form>
+  <app-todo-list class="todo-list"
+    *ngFor="let item of post; let i = index"
+    [getTodo]="item"
+    (onRemove)="removeId($event)"
+  >
+    <p *ngIf="item.title.length > 10; else short">Long</p>
+    <ng-template #short>
+      <p>short</p>
+    </ng-template>
+
+  </app-todo-list>
+  <hr>
+  <app-run-page class="btn-form"></app-run-page>
+</div>
+
